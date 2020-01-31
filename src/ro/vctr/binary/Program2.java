@@ -1,13 +1,12 @@
-package ru.safronova;
+package ro.vctr.binary;
 
-public class Safronova1 {
+public class Program2 {
     public static void main(String[] args) {
         BinTree bt1 = new BinTree();
         long start;
         long end;
 
-
-        //Считаем листья
+        //Count the leaves
         start = System.nanoTime();
         int leafCount = leafCounter(bt1.root);
         end = System.nanoTime();
@@ -15,7 +14,7 @@ public class Safronova1 {
         System.out.println("Количество листьев: " + leafCount);
     }
 
-    //Счётчик листьев ---------------------------------------------!!
+    //Leaf counter ---------------------------------------------!!
     private static int leafCounter(Node current) {
         if (current == null) {
             return 0;
